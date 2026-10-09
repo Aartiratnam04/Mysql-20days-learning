@@ -1,0 +1,35 @@
+mysql> INSERT INTO EMPLOYEES(EMPID,FIRST_NAME,LNAME,AGE,DOJ,ADDRESS,DEPT)
+    -> VALUES('EMP01','MALLI','ARJUN',27,'2024-03-20','HYD','IT');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> DESC EMPLOYEES;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| EMPID      | char(5)      | YES  |     | NULL    |       |
+| FIRST_NAME | varchar(30)  | YES  |     | NULL    |       |
+| LNAME      | varchar(100) | YES  |     | NULL    |       |
+| AGE        | int          | YES  |     | NULL    |       |
+| DOJ        | date         | YES  |     | NULL    |       |
+| ADDRESS    | tinytext     | YES  |     | NULL    |       |
+| DEPT       | varchar(30)  | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+7 rows in set (0.00 sec)
+
+mysql> INSERT INTO EMPLOYEES(EMPID,FIRST_NAME,LNAME,AGE,DOJ,ADDRESS,DEPT)
+    -> VALUES
+    -> ('EMP02','MAHESH','BABU',40,'1999-05-05','HYD','ACTING');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> DESC EMPLOYEES;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| EMPID      | char(5)      | YES  |     | NULL    |       |
+| FIRST_NAME | varchar(30)  | YES  |     | NULL    |       |
+| LNAME      | varchar(100) | YES  |     | NULL    |       |
+| AGE        | int          | YES  |     | NULL    |       |
+| DOJ        | date         | YES  |     | NULL    |       |
+| ADDRESS    | tinytext     | YES  |     | NULL    |       |
+| DEPT       | varchar(30)  | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
